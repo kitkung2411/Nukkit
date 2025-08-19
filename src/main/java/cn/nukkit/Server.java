@@ -537,8 +537,8 @@ public class Server {
         this.pluginManager.loadPlugins(this.pluginPath);
         this.enablePlugins(PluginLoadOrder.STARTUP);
 
-        CustomItemManager.get().closeRegistry();
-        EntityManager.get().closeRegistry();
+        // CustomItemManager.get().closeRegistry();
+        // EntityManager.get().closeRegistry();
 
         Item.initCreativeItems();
 
